@@ -1,0 +1,179 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IMQAMpm
+import CoreLocation
+import CoreTelephony
+import Darwin
+import Foundation
+@_exported import IMQAMpm
+import QuartzCore
+import Swift
+import UIKit
+import zlib
+public enum HTTPModelShortType : Swift.String {
+  case JSON
+  case XML
+  case HTML
+  case IMAGE
+  case OTHER
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class HTTPModel : ObjectiveC.NSObject {
+  @objc public var requestURL: Swift.String?
+  @objc public var requestMethod: Swift.String?
+  @objc public var requestCachePolicy: Swift.String?
+  @objc public var requestDate: Swift.String?
+  @objc public var requestTime: Swift.String?
+  @objc public var requestTimeout: Swift.String?
+  @objc public var requestHeaders: [Swift.AnyHashable : Any]?
+  public var requestBodyLength: Swift.Int?
+  @objc public var requestType: Swift.String?
+  public var responseStatus: Swift.Int?
+  @objc public var responseType: Swift.String?
+  @objc public var responseDate: Swift.String?
+  @objc public var responseTime: Swift.String?
+  @objc public var responseHeaders: [Swift.AnyHashable : Any]?
+  public var responseBodyLength: Swift.Int?
+  public var timeInterval: Swift.Float?
+  @objc public var randomHash: Foundation.NSString?
+  @objc public var shortType: Foundation.NSString
+  @objc public var noResponse: Swift.Bool
+  @objc public func getTimeFromDate(_ date: Foundation.Date) -> Swift.String?
+  public func getShortTypeFrom(_ contentType: Swift.String) -> IMQAMpm.HTTPModelShortType
+  @objc public func isSuccessful() -> Swift.Bool
+  @objc public func formattedRequestLogEntry() -> Swift.String
+  @objc public func formattedResponseLogEntry() -> Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+public struct CompressionLevel : Swift.RawRepresentable {
+  public let rawValue: Swift.Int32
+  public static var noCompression: IMQAMpm.CompressionLevel
+  public static var bestSpeed: IMQAMpm.CompressionLevel
+  public static var bestCompression: IMQAMpm.CompressionLevel
+  public static var defaultCompression: IMQAMpm.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error {
+  public enum Kind : Swift.Equatable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: IMQAMpm.GzipError.Kind, b: IMQAMpm.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: IMQAMpm.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: IMQAMpm.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+  public func gunzipped() throws -> Foundation.Data
+}
+@_inheritsConvenienceInitializers @objc open class IMQAMpm : ObjectiveC.NSObject {
+  @objc public static var sharedInstance: IMQAMpm.IMQAMpm
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func run(config: IMQAMpm.IMQAConfig)
+  @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers public class FrameCounter : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+  weak public var delegate: IMQAMpm.FrameCounterDelegate?
+  @objc public var notificationDelay: Swift.Double
+  @objc public func startTracking(inRunLoop runloop: Foundation.RunLoop = .main, mode: Foundation.RunLoop.Mode = .common)
+  @objc public func stopTracking()
+}
+public protocol FrameCounterDelegate : ObjectiveC.NSObjectProtocol {
+  func frameCounter(_ counter: IMQAMpm.FrameCounter, didUpdateFramesPerSecond fps: Swift.Int)
+}
+public struct Sysctl {
+  public enum Error : Swift.Error {
+    case unknown
+    case malformedUTF8
+    case invalidSize
+    case posixError(Darwin.POSIXErrorCode)
+  }
+  public static func dataForKeys(_ keys: [Swift.Int32]) throws -> [Swift.Int8]
+  public static func keysForName(_ name: Swift.String) throws -> [Swift.Int32]
+  public static func valueOfType<T>(_ type: T.Type, forKeys keys: [Swift.Int32]) throws -> T
+  public static func valueOfType<T>(_ type: T.Type, forKeys keys: Swift.Int32...) throws -> T
+  public static func valueOfType<T>(_ type: T.Type, forName name: Swift.String) throws -> T
+  public static func stringForKeys(_ keys: [Swift.Int32]) throws -> Swift.String
+  public static func stringForKeys(_ keys: Swift.Int32...) throws -> Swift.String
+  public static func stringForName(_ name: Swift.String) throws -> Swift.String
+  public static var hostName: Swift.String {
+    get
+  }
+  public static var machine: Swift.String {
+    get
+  }
+  public static var model: Swift.String {
+    get
+  }
+  public static var activeCPUs: Swift.Int32 {
+    get
+  }
+  public static var osRelease: Swift.String {
+    get
+  }
+  public static var osType: Swift.String {
+    get
+  }
+  public static var osVersion: Swift.String {
+    get
+  }
+  public static var version: Swift.String {
+    get
+  }
+}
+@objc public class IMQAConfig : ObjectiveC.NSObject {
+  @objc public var project_key: Swift.String
+  @objc public var dump_interval: Swift.Int
+  @objc public var launch_time: Swift.Int64
+  @objc public var dev_langauge: Swift.String
+  @objc public var prefix: Swift.String
+  @objc public var save_interval: Swift.Int
+  @objc public var api_url: Swift.String
+  @objc public var ignoreUrl: [Swift.String]
+  @objc public var useNetworkCollect: Swift.Bool
+  @objc public var downloadDumpData: Swift.Bool
+  @objc public init(_ project_key: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public struct MemoryMonitor {
+  public static var PAGE_SIZE: Darwin.vm_size_t
+  public init()
+  public func getAppUsedMemory() -> Swift.Double
+  public mutating func getOsMemoryUsage() -> (total: Swift.Double, free: Swift.Double, active: Swift.Double, inactive: Swift.Double, wired: Swift.Double)
+  public enum Unit : Swift.Double {
+    case byte
+    case kilobyte
+    case megabyte
+    case gigabyte
+    public typealias RawValue = Swift.Double
+    public init?(rawValue: Swift.Double)
+    public var rawValue: Swift.Double {
+      get
+    }
+  }
+}
+public struct CPUMonitor {
+  public init()
+  public mutating func getOsCPUUsage() -> (app: Swift.Double, system: Swift.Double, user: Swift.Double, idle: Swift.Double, nice: Swift.Double)
+}

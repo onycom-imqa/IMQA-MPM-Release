@@ -1,0 +1,11 @@
+framework module IMQAMpm {
+  umbrella header "IMQAMpm.h"
+
+  export *
+  module * { export * }
+}
+
+module IMQAMpm.Swift {
+    header "IMQAMpm-Swift.h"
+    requires objc
+}
