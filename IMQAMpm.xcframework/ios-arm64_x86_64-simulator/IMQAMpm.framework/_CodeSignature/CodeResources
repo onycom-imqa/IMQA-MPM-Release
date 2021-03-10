@@ -24,6 +24,10 @@
 		<data>
 		/JAhjb5pICvnuUJPolHqj5pYagQ=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		mNpd3X/zcVFGzYD4RceSOqoYG5Y=
+		</data>
 		<key>Modules/IMQAMpm.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
 		JkeOhXN+QDaypiuSpIyHV/qgtxk=
@@ -105,6 +109,13 @@
 			<key>hash2</key>
 			<data>
 			UO7QLEG5641gYdd3IJzkK/ArHhMKoLLtEQbyOGcENwM=
+			</data>
+		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8vkB44CgVn7/5U0KzPon9k4NJKaxyh0D+/t1lJn0Un0=
 			</data>
 		</dict>
 		<key>Modules/IMQAMpm.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
