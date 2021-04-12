@@ -113,8 +113,7 @@ IMQA MPM 프레임워크는 WKWebView에 대해서 성능 정보도 수집하고
 WKWebView 데이터 수집을 원한다면 웹 페이지에 IMQA WebView JavaScript라이브러리를 삽입해 주어야 합니다. 원하는 경우 파일을 다운로드 받아 웹 페이지에서 직접 경로를 추가하여 사용 할 수 있습니다.
 ```html
 <!-- IMQA Webview Agent 입니다. -->
-<script type="text/javascript" src="https://mpm.imqa.io/static/webview/webview-agent.js"
-crossorigin></script>
+<script type="text/javascript" src="https://mpm.imqa.io/static/webview/webview-agent.js" crossorigin></script>
 ```
 
 ### Objective-C 
