@@ -166,3 +166,34 @@ override func viewDidLoad() {
 pod install --repo-update
 ```
 
+### 수집주기를 변경할 수 있나요? 
+
+IMQA MPM 프레임워크가 데이터를 저장하는 주기와 수집하는 주기에 대해서 초 단위로 설정할 수 있습니다. (예시는 Swift로만 제공됩니다.)
+
+
+```Swift
+let mpmConfig = IMQAConfig("<PROJECT_KEY>")
+mpmConfig.dump_interval = 10 // 성능 데이터 덤프를 뜨는 주기 (sec) 
+mpmConfig.save_interval = 60 // 성능 데이터를 수집서버로 전송하는 주기 (sec)
+```
+
+### 네트워크 수집 설정을 변경할 수 있나요? 
+
+IMQA MPM 프레임워크에서는 네트워크 수집에 대해서 수집 여부를 설정 할 수 있습니다. 또한, 특정 URL 에 대한 수집을 무시할 수 있는 기능을 제공하고 있어, 보안이 필요한 URL은 무시 할 수 있습니다. (예시는 Swift로만 제공됩니다.)
+
+```Swift
+let mpmConfig = IMQAConfig("<PROJECT_KEY>")
+mpmConfig.useNetworkCollect = true // true: 수집함 , false: 수집안함 
+mpmConfig.ignoreUrl = ["https://url1.com", "http://url.com"] // 특정 URL 무시 Array
+```
+
+### 수집하고 있는 데이터를 로그로 확인 할 수 있나요? 
+
+IMQA MPM 프레임워크에서 수집하고 있는 데이터가 궁금한 경우 자체 옵션을 통해서 데이터를 Console 로 확인 하실 수 있습니다. (예시는 Swift로만 제공됩니다.)
+
+```Swift
+let mpmConfig = IMQAConfig("<PROJECT_KEY>")
+mpmConfig.downloadDumpData = true
+```
+
+
