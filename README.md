@@ -63,6 +63,9 @@ pod 'IMQAMPMAgent', '~> 3.1.0'
 
 #### AppDelegate.swift
 ```swift 
+
+import IMQAMPMAgent
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
     let PROJECT_KEY = ""
