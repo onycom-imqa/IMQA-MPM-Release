@@ -7,8 +7,8 @@ IMQA MPM 을 iOS 프로젝트에 추가하면, Objective-C 및 Swift 로 개발�
 
 ### 시스템 요구사항 
 
-* iOS XX 이상 
-* Xcode XX 이상 
+* iOS 9 이상 (권장) / iOS 8도 지원은 하고 있으나, 데이터 수집이 원활하지 않을 수 있음.  
+* Xcode 12 이상 
 
 ---
 
@@ -20,7 +20,7 @@ IMQA MPM SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있습
 
 ### XCFrameworks 
 
-[프레임워크 다운로드]() 
+[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-MPM-Release/releases/download/v3.1.1/IMQAMPMAgent.zip) 
 
 위 링크를 통해 프레임워크를 다운로드 후, Targets > [Project Name] > General > Frameworks, Libraries, and Embedded Content 로 옮겨주세요.
 
@@ -29,7 +29,7 @@ IMQA MPM SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있습
 Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행해주세요. 
 ```Podfile 
 
-pod 'IMQAMPMAgent', '~> 3.1.0'
+pod 'IMQAMPMAgent', '~> 3.1.1'
 
 ```
 
