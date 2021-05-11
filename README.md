@@ -29,7 +29,7 @@ IMQA MPM SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있습
 Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행해주세요. 
 ```Podfile 
 
-pod 'IMQAMPMAgent', '~> 3.1.6'
+pod 'IMQAMPMAgent', '3.1.6'
 
 ```
 
