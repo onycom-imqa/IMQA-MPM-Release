@@ -1,0 +1,185 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IMQAMPMAgent
+import CoreLocation
+import CoreTelephony
+import Darwin
+import Foundation
+@_exported import IMQAMPMAgent
+import QuartzCore
+import Swift
+import UIKit
+import zlib
+@objc @_inheritsConvenienceInitializers public class FrameCounter : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+  weak public var delegate: IMQAMPMAgent.FrameCounterDelegate?
+  @objc public var notificationDelay: Swift.Double
+  @objc public func startTracking(inRunLoop runloop: Foundation.RunLoop = .main, mode: Foundation.RunLoop.Mode = .common)
+  @objc public func stopTracking()
+}
+public protocol FrameCounterDelegate : ObjectiveC.NSObjectProtocol {
+  func frameCounter(_ counter: IMQAMPMAgent.FrameCounter, didUpdateFramesPerSecond fps: Swift.Int)
+}
+public struct MemoryMonitor {
+  public static let PAGE_SIZE: Darwin.vm_size_t
+  public init()
+  public func getAppUsedMemory() -> Swift.Double
+  public mutating func getOsMemoryUsage() -> (total: Swift.Double, free: Swift.Double, active: Swift.Double, inactive: Swift.Double, wired: Swift.Double)
+  public enum Unit : Swift.Double {
+    case byte
+    case kilobyte
+    case megabyte
+    case gigabyte
+    public init?(rawValue: Swift.Double)
+    public typealias RawValue = Swift.Double
+    public var rawValue: Swift.Double {
+      get
+    }
+  }
+}
+@_inheritsConvenienceInitializers @objc public class HTTPModel : ObjectiveC.NSObject {
+  @objc public var requestURL: Swift.String?
+  @objc public var requestMethod: Swift.String?
+  @objc public var requestCachePolicy: Swift.String?
+  @objc public var requestDate: Swift.String?
+  @objc public var requestTime: Swift.String?
+  @objc public var requestTimeout: Swift.String?
+  @objc public var requestHeaders: [Swift.AnyHashable : Any]?
+  public var requestBodyLength: Swift.Int?
+  @objc public var requestType: Swift.String?
+  public var responseStatus: Swift.Int?
+  @objc public var responseType: Swift.String?
+  @objc public var responseDate: Swift.String?
+  @objc public var responseTime: Swift.String?
+  @objc public var responseHeaders: [Swift.AnyHashable : Any]?
+  public var responseBodyLength: Swift.Int?
+  public var timeInterval: Swift.Float?
+  @objc public var randomHash: Foundation.NSString?
+  @objc public var shortType: Foundation.NSString
+  @objc public var noResponse: Swift.Bool
+  @objc public func getTimeFromDate(_ date: Foundation.Date) -> Swift.String?
+  public func getShortTypeFrom(_ contentType: Swift.String) -> IMQAMPMAgent.HTTPModelShortType
+  @objc public func isSuccessful() -> Swift.Bool
+  @objc public func formattedRequestLogEntry() -> Swift.String
+  @objc public func formattedResponseLogEntry() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class IMQAMpm : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: IMQAMPMAgent.IMQAMpm
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func run(config: IMQAMPMAgent.IMQAConfig)
+  @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
+}
+public struct CPUMonitor {
+  public init()
+  public mutating func getOsCPUUsage() -> (app: Swift.Double, system: Swift.Double, user: Swift.Double, idle: Swift.Double, nice: Swift.Double)
+}
+public struct Sysctl {
+  public enum Error : Swift.Error {
+    case unknown
+    case malformedUTF8
+    case invalidSize
+    case posixError(Darwin.POSIXErrorCode)
+  }
+  public static func dataForKeys(_ keys: [Swift.Int32]) throws -> [Swift.Int8]
+  public static func keysForName(_ name: Swift.String) throws -> [Swift.Int32]
+  public static func valueOfType<T>(_ type: T.Type, forKeys keys: [Swift.Int32]) throws -> T
+  public static func valueOfType<T>(_ type: T.Type, forKeys keys: Swift.Int32...) throws -> T
+  public static func valueOfType<T>(_ type: T.Type, forName name: Swift.String) throws -> T
+  public static func stringForKeys(_ keys: [Swift.Int32]) throws -> Swift.String
+  public static func stringForKeys(_ keys: Swift.Int32...) throws -> Swift.String
+  public static func stringForName(_ name: Swift.String) throws -> Swift.String
+  public static var hostName: Swift.String {
+    get
+  }
+  public static var machine: Swift.String {
+    get
+  }
+  public static var model: Swift.String {
+    get
+  }
+  public static var activeCPUs: Swift.Int32 {
+    get
+  }
+  public static var osRelease: Swift.String {
+    get
+  }
+  public static var osType: Swift.String {
+    get
+  }
+  public static var osVersion: Swift.String {
+    get
+  }
+  public static var version: Swift.String {
+    get
+  }
+}
+@objc public class IMQAConfig : ObjectiveC.NSObject {
+  @objc public var project_key: Swift.String
+  @objc public var dump_interval: Swift.Int
+  @objc public var launch_time: Swift.Int64
+  @objc public var dev_langauge: Swift.String
+  @objc public var prefix: Swift.String
+  @objc public var save_interval: Swift.Int
+  @objc public var api_url: Swift.String
+  @objc public var ignoreUrl: [Swift.String]
+  @objc public var useNetworkCollect: Swift.Bool
+  @objc public var downloadDumpData: Swift.Bool
+  @objc public init(_ project_key: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum HTTPModelShortType : Swift.String {
+  case JSON
+  case XML
+  case HTML
+  case IMAGE
+  case OTHER
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CompressionLevel : Swift.RawRepresentable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: IMQAMPMAgent.CompressionLevel
+  public static let bestSpeed: IMQAMPMAgent.CompressionLevel
+  public static let bestCompression: IMQAMPMAgent.CompressionLevel
+  public static let defaultCompression: IMQAMPMAgent.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error {
+  public enum Kind : Swift.Equatable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: IMQAMPMAgent.GzipError.Kind, b: IMQAMPMAgent.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: IMQAMPMAgent.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: IMQAMPMAgent.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+  public func gunzipped() throws -> Foundation.Data
+}
+extension IMQAMPMAgent.MemoryMonitor.Unit : Swift.Equatable {}
+extension IMQAMPMAgent.MemoryMonitor.Unit : Swift.Hashable {}
+extension IMQAMPMAgent.MemoryMonitor.Unit : Swift.RawRepresentable {}
+extension IMQAMPMAgent.HTTPModelShortType : Swift.Equatable {}
+extension IMQAMPMAgent.HTTPModelShortType : Swift.Hashable {}
+extension IMQAMPMAgent.HTTPModelShortType : Swift.RawRepresentable {}
