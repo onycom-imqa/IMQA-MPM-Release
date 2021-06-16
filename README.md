@@ -121,7 +121,7 @@ WKWebView 데이터 수집을 원한다면 웹 페이지에 IMQA WebView JavaScr
 ```Objectivec
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
   // IMQA 설정 부분
-  if([message.name isEqual: @""]) {
+  if([message.name isEqual: @"ImqaBridge"]) {
     [[IMQAMpm sharedInstance] saveWebviewPostMessage:self :message.body];
   }
 }
