@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IMQAMPMAgent
 import CoreLocation
 import CoreTelephony
@@ -9,6 +9,7 @@ import Foundation
 import QuartzCore
 import Swift
 import UIKit
+import _Concurrency
 import zlib
 @objc @_inheritsConvenienceInitializers public class FrameCounter : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -129,7 +130,6 @@ public struct Sysctl {
   @objc public var useNetworkCollect: Swift.Bool
   @objc public var downloadDumpData: Swift.Bool
   @objc public init(_ project_key: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 public enum HTTPModelShortType : Swift.String {
@@ -170,7 +170,7 @@ public struct GzipError : Swift.Error {
     get
   }
 }
-extension Data {
+extension Foundation.Data {
   public var isGzipped: Swift.Bool {
     get
   }
