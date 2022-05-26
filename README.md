@@ -20,7 +20,7 @@ IMQA MPM SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있습
 
 ### XCFrameworks 
 
-[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-MPM-Release/releases/download/v3.1.6/IMQAMPMAgent.zip) 
+[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-MPM-Release/releases/download/v3.5.0/IMQAMPMAgent.zip) 
 
 위 링크를 통해 프레임워크를 다운로드 후, Targets > [Project Name] > General > Frameworks, Libraries, and Embedded Content 로 옮겨주세요.
 
@@ -29,7 +29,7 @@ IMQA MPM SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있습
 Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행해주세요. 
 ```Podfile 
 
-pod 'IMQAMPMAgent', '3.2.0'
+pod 'IMQAMPMAgent', '3.5.0'
 
 ```
 
@@ -156,7 +156,41 @@ override func viewDidLoad() {
 
 </br>
 
-## 5. FAQ
+## 5. Network 수집 (NSURLSession 또는 URLSession 을 사용하는 경우) 
+
+NSURLSession 또는 URLSession을 이용하여 네트워크를 통신하는 경우에 일부 상황에서 네트워크 수집을 위해 설정이 필요합니다. 
+
+### Shared Session의 경우에는 **별도의 설정이 필요없이** 네트워크 수집 가능
+
+- Obejctive-C
+```objc
+NSURLSession *session = [NSURLSession sharedSession];
+```
+
+- Swift 
+```swift
+let session = URLSession.shared
+```
+
+### Shared Session이 아닌 URLSessionConfiguration을 별도로 사용하는 경우 아래와 같이 프로토콜 추가가 필요
+
+- Objective-C
+```objc
+NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration]; // or default
+configuration.protocolClasses = IMQAMpm.sharedInstance.imqaURLSessionProtocol;
+NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+```
+
+- Swift 
+```swift
+import IMQAMPMAgent
+
+let configuration = URLSessionConfiguration.ephemeral // or default
+configuration.protocolClasses = IMQAMpm.sharedInstance.imqaURLSessionProtocol()
+let session = URLSession.init(configuration: configuration)
+```
+
+## 6. FAQ
 
 ### Error : CocoaPods could not find compatible versions for pod ""
 
