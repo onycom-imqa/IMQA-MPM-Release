@@ -177,7 +177,7 @@ let session = URLSession.shared
 - Objective-C
 ```objc
 NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration]; // or default
-configuration.protocolClasses = IMQAMpm.sharedInstance.imqaURLSessionProtocol;
+configuration.protocolClasses = [[IMQAMpm sharedInstance] imqaURLSessionProtocol];
 NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
 ```
 
