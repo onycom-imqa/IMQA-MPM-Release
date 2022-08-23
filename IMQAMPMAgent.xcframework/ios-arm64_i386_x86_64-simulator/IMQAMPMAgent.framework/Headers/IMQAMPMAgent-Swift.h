@@ -268,6 +268,8 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull ignoreUrl;
 @property (nonatomic) BOOL useNetworkCollect;
 @property (nonatomic) BOOL downloadDumpData;
+@property (nonatomic) BOOL remoteConfig;
+@property (nonatomic) BOOL collect;
 - (nonnull instancetype)init:(NSString * _Nonnull)project_key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -283,6 +285,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
+- (void)syncRemoteConfig:(IMQAConfig * _Nonnull)config;
 - (NSArray<SWIFT_METATYPE(NSURLProtocol)> * _Nonnull)imqaURLSessionProtocol SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -564,6 +567,8 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull ignoreUrl;
 @property (nonatomic) BOOL useNetworkCollect;
 @property (nonatomic) BOOL downloadDumpData;
+@property (nonatomic) BOOL remoteConfig;
+@property (nonatomic) BOOL collect;
 - (nonnull instancetype)init:(NSString * _Nonnull)project_key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -579,6 +584,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
+- (void)syncRemoteConfig:(IMQAConfig * _Nonnull)config;
 - (NSArray<SWIFT_METATYPE(NSURLProtocol)> * _Nonnull)imqaURLSessionProtocol SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -860,6 +866,8 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull ignoreUrl;
 @property (nonatomic) BOOL useNetworkCollect;
 @property (nonatomic) BOOL downloadDumpData;
+@property (nonatomic) BOOL remoteConfig;
+@property (nonatomic) BOOL collect;
 - (nonnull instancetype)init:(NSString * _Nonnull)project_key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -875,6 +883,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
+- (void)syncRemoteConfig:(IMQAConfig * _Nonnull)config;
 - (NSArray<SWIFT_METATYPE(NSURLProtocol)> * _Nonnull)imqaURLSessionProtocol SWIFT_WARN_UNUSED_RESULT;
 @end
 

@@ -73,6 +73,7 @@ public struct MemoryMonitor {
   @objc deinit
   @objc public func run(config: IMQAMPMAgent.IMQAConfig)
   @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
+  @objc public func syncRemoteConfig(_ config: IMQAMPMAgent.IMQAConfig)
   @objc public func imqaURLSessionProtocol() -> [Foundation.URLProtocol.Type]
 }
 public struct CPUMonitor {
@@ -130,6 +131,8 @@ public struct Sysctl {
   @objc public var ignoreUrl: [Swift.String]
   @objc public var useNetworkCollect: Swift.Bool
   @objc public var downloadDumpData: Swift.Bool
+  @objc public var remoteConfig: Swift.Bool
+  @objc public var collect: Swift.Bool
   @objc public init(_ project_key: Swift.String)
   @objc deinit
 }
