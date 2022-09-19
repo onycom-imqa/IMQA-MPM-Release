@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/IMQAMPMAgent-Swift.h</key>
 		<data>
-		zk1emwek7dMKG09PaX6Ga/hFl7U=
+		2SwuZ9rgBN3eoDssXMXGuXU5fF8=
 		</data>
 		<key>Headers/IMQAMPMAgent.h</key>
 		<data>
@@ -22,69 +22,65 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mNNWaYrdT9m7jPXvmYxmU1twUPQ=
+		w24bDMXaSJat9Jloe5+p+MbHaJc=
 		</data>
 		<key>LICENSE</key>
 		<data>
 		mNpd3X/zcVFGzYD4RceSOqoYG5Y=
 		</data>
+		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		BRJR/rRdKFQzgP3skemFjYUKJBM=
+		</data>
+		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		8h7pbB1ij+grI77ITj2bhTQ4QwM=
+		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Gz3cHDrmAsaULn4w18juq6OerDU=
+		4l7YMWLged4SJ/UtjxxSpErod5I=
 		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rs6w/OIe4GM1pUibLOj3SoTmlkQ=
+		8h7pbB1ij+grI77ITj2bhTQ4QwM=
 		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8QBO8Vr4K7W0jtjhS/JlzwxLuH8=
+		5Hdl+4ismL1XQ95aSoamG/rxCzE=
 		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Gz3cHDrmAsaULn4w18juq6OerDU=
+		BRJR/rRdKFQzgP3skemFjYUKJBM=
 		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rs6w/OIe4GM1pUibLOj3SoTmlkQ=
-		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		8QBO8Vr4K7W0jtjhS/JlzwxLuH8=
+		kD9lKGP8S8d4ftWvJCek9O/PKnE=
 		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		W6khyJNhCrV8m/FikLJvfIzTb2I=
+		Gxnm8lAPJ/Bhsgn57QJ17glmcao=
 		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2XTNFXZL4E59H48RSv9gPnJLMCo=
+		kD9lKGP8S8d4ftWvJCek9O/PKnE=
 		</data>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		j4IUWAE9v7infhQ2vW1J22uuzDU=
-		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		W6khyJNhCrV8m/FikLJvfIzTb2I=
-		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		2XTNFXZL4E59H48RSv9gPnJLMCo=
-		</data>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		j4IUWAE9v7infhQ2vW1J22uuzDU=
+		WFAaFg7AzK19wOq9O+5s+9v0ayo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		0fJi0w67RvR0eWSvnjvFZdilpMs=
+		N4AFDvzLsrDs4hV0m2o/QT2prlk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/IMBacktraceHelper.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			OvnC70ywjGueUC2oqvRsaKQZM18=
+			</data>
 			<key>hash2</key>
 			<data>
 			GCYHACy6dx1PHg/2KhRIWqyUHW4vtTWcptKeP6/3Tys=
@@ -92,13 +88,21 @@
 		</dict>
 		<key>Headers/IMQAMPMAgent-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2SwuZ9rgBN3eoDssXMXGuXU5fF8=
+			</data>
 			<key>hash2</key>
 			<data>
-			XzIkvyj/zM4pImtabgMcfSdKHEfWDLnGx9yJVNZxp7w=
+			b7lS2P7zkJPsPn4/2JHhw25SauXoNsaL5xMNXETbsOM=
 			</data>
 		</dict>
 		<key>Headers/IMQAMPMAgent.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Gx7lenrCW+MukOFTtxqjQ4xiXQk=
+			</data>
 			<key>hash2</key>
 			<data>
 			OnWMWr4ogUzK0f3QUJmHKtwL0t4YzQSXUkgwRxp7Mk8=
@@ -106,6 +110,10 @@
 		</dict>
 		<key>Headers/IMQAReachability.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2MyFpDGRSHxbiNe+j1OoT7+k7sQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			UO7QLEG5641gYdd3IJzkK/ArHhMKoLLtEQbyOGcENwM=
@@ -113,100 +121,134 @@
 		</dict>
 		<key>LICENSE</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mNpd3X/zcVFGzYD4RceSOqoYG5Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			8vkB44CgVn7/5U0KzPon9k4NJKaxyh0D+/t1lJn0Un0=
 			</data>
 		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BRJR/rRdKFQzgP3skemFjYUKJBM=
+			</data>
 			<key>hash2</key>
 			<data>
-			b/wFhKqLTmOHxlsHtRSuQYdk25fHjdVu0Y/nNwSQS1s=
+			qdih+L3XS3kUvxaATEoB26lXBmCE0VRN1VPg5BQDp8c=
+			</data>
+		</dict>
+		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8h7pbB1ij+grI77ITj2bhTQ4QwM=
+			</data>
+			<key>hash2</key>
+			<data>
+			AuqRaSE3nX5EWIY5r7heSdtOUARoLvTKdnNr4JTw8is=
+			</data>
+		</dict>
+		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4l7YMWLged4SJ/UtjxxSpErod5I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ihgPijpXBUX3d6VOMjzRICPMoNQPWpa1o1YgDXYQx9M=
 			</data>
 		</dict>
 		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8h7pbB1ij+grI77ITj2bhTQ4QwM=
+			</data>
 			<key>hash2</key>
 			<data>
-			XAss7278nGr8zhyq+ZS8qCwqP8TLczjbrPdx7finUQk=
+			AuqRaSE3nX5EWIY5r7heSdtOUARoLvTKdnNr4JTw8is=
 			</data>
 		</dict>
 		<key>Modules/IMQAMPMAgent.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5Hdl+4ismL1XQ95aSoamG/rxCzE=
+			</data>
 			<key>hash2</key>
 			<data>
-			Fy3soCSXH03U7yv345/MbGUASjyM0LzML8ERPEcGKSU=
+			AmK+gtZYOBs3pgwfEegEiE4/qczXlaaipBMFtEs70QM=
 			</data>
 		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BRJR/rRdKFQzgP3skemFjYUKJBM=
+			</data>
 			<key>hash2</key>
 			<data>
-			b/wFhKqLTmOHxlsHtRSuQYdk25fHjdVu0Y/nNwSQS1s=
+			qdih+L3XS3kUvxaATEoB26lXBmCE0VRN1VPg5BQDp8c=
 			</data>
 		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash2</key>
+			<key>hash</key>
 			<data>
-			XAss7278nGr8zhyq+ZS8qCwqP8TLczjbrPdx7finUQk=
+			kD9lKGP8S8d4ftWvJCek9O/PKnE=
 			</data>
-		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/arm64.swiftmodule</key>
-		<dict>
 			<key>hash2</key>
 			<data>
-			Fy3soCSXH03U7yv345/MbGUASjyM0LzML8ERPEcGKSU=
+			7Y8ZH0QkoS82Mds2HmT3AG3qBTK+EQKMZp2i+qxIaz0=
 			</data>
 		</dict>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Gxnm8lAPJ/Bhsgn57QJ17glmcao=
+			</data>
 			<key>hash2</key>
 			<data>
-			oXmo/CVKa0SLSEkBTyednDp78y00/d4vCM/Mo9Now6I=
+			pSF5y0YJQ1HwQfyMavhQtJ1CkZ88T07QWcd7g2tL+HQ=
 			</data>
 		</dict>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kD9lKGP8S8d4ftWvJCek9O/PKnE=
+			</data>
 			<key>hash2</key>
 			<data>
-			n8+X3QP7pr1+WiFOimhBUkz7611OrjJH/xd9X9Ng7Y4=
+			7Y8ZH0QkoS82Mds2HmT3AG3qBTK+EQKMZp2i+qxIaz0=
 			</data>
 		</dict>
 		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash2</key>
+			<key>hash</key>
 			<data>
-			GKwdNEWJsk1elW0fkJAzC03Yn8JOIBcOO/VZ2IxVp1g=
+			WFAaFg7AzK19wOq9O+5s+9v0ayo=
 			</data>
-		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
 			<key>hash2</key>
 			<data>
-			oXmo/CVKa0SLSEkBTyednDp78y00/d4vCM/Mo9Now6I=
-			</data>
-		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n8+X3QP7pr1+WiFOimhBUkz7611OrjJH/xd9X9Ng7Y4=
-			</data>
-		</dict>
-		<key>Modules/IMQAMPMAgent.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GKwdNEWJsk1elW0fkJAzC03Yn8JOIBcOO/VZ2IxVp1g=
+			RAOKiu9D4xKKbrhI0Gfod5OsRoWmPHNxBCgWzbQNUGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			N4AFDvzLsrDs4hV0m2o/QT2prlk=
+			</data>
 			<key>hash2</key>
 			<data>
-			lKcTw29iqnO73DdJacvKCt38R5CUYd549v++5khpA9o=
+			RahRCRhw7OZLZFyJzm1p5KhWuXlu0lEg/PrHx9tN2zo=
 			</data>
 		</dict>
 	</dict>

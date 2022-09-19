@@ -6,6 +6,6 @@ framework module IMQAMPMAgent {
 }
 
 module IMQAMPMAgent.Swift {
-    header "IMQAMPMAgent-Swift.h"
-    requires objc
+  header "IMQAMPMAgent-Swift.h"
+  requires objc
 }
