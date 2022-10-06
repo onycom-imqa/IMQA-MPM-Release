@@ -321,6 +321,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
+- (void)saveUserProfileWithId:(NSString * _Nullable)id name:(NSString * _Nullable)name email:(NSString * _Nullable)email;
 - (void)syncRemoteConfig:(IMQAConfig * _Nonnull)config;
 - (NSArray<SWIFT_METATYPE(NSURLProtocol)> * _Nonnull)imqaURLSessionProtocol SWIFT_WARN_UNUSED_RESULT;
 @end

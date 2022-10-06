@@ -75,6 +75,7 @@ public struct MemoryMonitor {
   @objc deinit
   @objc public func run(config: IMQAMPMAgent.IMQAConfig)
   @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
+  @objc public func saveUserProfile(id: Swift.String?, name: Swift.String?, email: Swift.String?)
   @objc public func syncRemoteConfig(_ config: IMQAMPMAgent.IMQAConfig)
   @objc public func imqaURLSessionProtocol() -> [Foundation.URLProtocol.Type]
 }
