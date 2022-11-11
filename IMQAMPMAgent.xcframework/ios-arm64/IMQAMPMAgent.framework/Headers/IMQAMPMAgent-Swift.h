@@ -265,32 +265,6 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent12FrameCounter")
 @end
 
 @class NSString;
-@class NSDate;
-
-SWIFT_CLASS("_TtC12IMQAMPMAgent9HTTPModel")
-@interface HTTPModel : NSObject
-@property (nonatomic, copy) NSString * _Nullable requestURL;
-@property (nonatomic, copy) NSString * _Nullable requestMethod;
-@property (nonatomic, copy) NSString * _Nullable requestCachePolicy;
-@property (nonatomic, copy) NSString * _Nullable requestDate;
-@property (nonatomic, copy) NSString * _Nullable requestTime;
-@property (nonatomic, copy) NSString * _Nullable requestTimeout;
-@property (nonatomic, copy) NSDictionary * _Nullable requestHeaders;
-@property (nonatomic, copy) NSString * _Nullable requestType;
-@property (nonatomic, copy) NSString * _Nullable responseType;
-@property (nonatomic, copy) NSString * _Nullable responseDate;
-@property (nonatomic, copy) NSString * _Nullable responseTime;
-@property (nonatomic, copy) NSDictionary * _Nullable responseHeaders;
-@property (nonatomic, strong) NSString * _Nullable randomHash;
-@property (nonatomic, strong) NSString * _Nonnull shortType;
-@property (nonatomic) BOOL noResponse;
-- (NSString * _Nullable)getTimeFromDate:(NSDate * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isSuccessful SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nonnull)formattedRequestLogEntry SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nonnull)formattedResponseLogEntry SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @interface IMQAConfig : NSObject
@@ -306,13 +280,13 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @property (nonatomic) BOOL downloadDumpData;
 @property (nonatomic) BOOL remoteConfig;
 @property (nonatomic) BOOL collect;
+@property (nonatomic, copy) NSString * _Nonnull version;
 - (nonnull instancetype)init:(NSString * _Nonnull)project_key OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIViewController;
-@class NSURLProtocol;
 
 SWIFT_CLASS("_TtC12IMQAMPMAgent7IMQAMpm")
 @interface IMQAMpm : NSObject
@@ -322,9 +296,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
 - (void)saveUserProfileWithId:(NSString * _Nullable)id name:(NSString * _Nullable)name email:(NSString * _Nullable)email;
-- (void)syncRemoteConfig:(IMQAConfig * _Nonnull)config;
-- (NSArray<SWIFT_METATYPE(NSURLProtocol)> * _Nonnull)imqaURLSessionProtocol SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
