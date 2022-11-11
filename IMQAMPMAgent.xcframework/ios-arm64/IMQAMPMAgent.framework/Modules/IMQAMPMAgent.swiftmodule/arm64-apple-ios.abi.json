@@ -8132,21 +8132,21 @@
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "StringLiteral",
-      "offset": 12165,
+      "offset": 11938,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "StringLiteral",
-      "offset": 12227,
+      "offset": 12000,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "StringLiteral",
-      "offset": 12230,
+      "offset": 12003,
       "length": 1,
       "value": "\"\""
     },
@@ -8596,7 +8596,7 @@
       "kind": "StringLiteral",
       "offset": 262,
       "length": 8,
-      "value": "\"3.13.1\""
+      "value": "\"3.13.2\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
