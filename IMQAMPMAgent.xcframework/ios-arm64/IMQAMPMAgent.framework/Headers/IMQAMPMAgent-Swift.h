@@ -277,6 +277,7 @@ SWIFT_CLASS("_TtC12IMQAMPMAgent10IMQAConfig")
 @property (nonatomic, copy) NSString * _Nonnull api_url;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull ignoreUrl;
 @property (nonatomic) BOOL useNetworkCollect;
+@property (nonatomic) BOOL useViewControllerCollect;
 @property (nonatomic) BOOL downloadDumpData;
 @property (nonatomic) BOOL remoteConfig;
 @property (nonatomic) BOOL collect;

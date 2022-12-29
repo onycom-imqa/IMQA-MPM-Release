@@ -103,6 +103,7 @@ public struct Sysctl {
   @objc public var api_url: Swift.String
   @objc public var ignoreUrl: [Swift.String]
   @objc public var useNetworkCollect: Swift.Bool
+  @objc public var useViewControllerCollect: Swift.Bool
   @objc public var downloadDumpData: Swift.Bool
   @objc public var remoteConfig: Swift.Bool
   @objc public var collect: Swift.Bool

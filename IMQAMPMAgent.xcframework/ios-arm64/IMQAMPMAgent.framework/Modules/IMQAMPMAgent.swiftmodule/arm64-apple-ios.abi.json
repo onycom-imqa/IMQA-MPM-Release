@@ -3171,6 +3171,99 @@
           },
           {
             "kind": "Var",
+            "name": "useViewControllerCollect",
+            "printedName": "useViewControllerCollect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(py)useViewControllerCollect",
+            "mangledName": "$s12IMQAMPMAgent10IMQAConfigC24useViewControllerCollectSbvp",
+            "moduleName": "IMQAMPMAgent",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)useViewControllerCollect",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC24useViewControllerCollectSbvg",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)setUseViewControllerCollect:",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC24useViewControllerCollectSbvs",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12IMQAMPMAgent10IMQAConfigC24useViewControllerCollectSbvM",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC24useViewControllerCollectSbvM",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "downloadDumpData",
             "printedName": "downloadDumpData",
             "children": [
@@ -5359,21 +5452,21 @@
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 554,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
-      "offset": 676,
+      "offset": 616,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 619,
       "length": 1,
       "value": "\"\""
     },
@@ -5409,6 +5502,20 @@
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 290,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
       "length": 2,
       "value": "\"\""
     },
@@ -5576,7 +5683,7 @@
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 117,
+      "offset": 97,
       "length": 28,
       "value": "\"IMQAProtocolRequestHandled\""
     },
@@ -5646,30 +5753,37 @@
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 733,
+      "offset": 741,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 781,
+      "offset": 840,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 824,
+      "offset": 883,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
-      "offset": 868,
+      "offset": 927,
       "length": 8,
-      "value": "\"3.13.2\""
+      "value": "\"3.17.0\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
