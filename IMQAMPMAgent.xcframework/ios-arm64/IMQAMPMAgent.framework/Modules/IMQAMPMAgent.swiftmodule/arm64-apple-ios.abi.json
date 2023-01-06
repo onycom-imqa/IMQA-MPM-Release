@@ -5783,7 +5783,7 @@
       "kind": "StringLiteral",
       "offset": 927,
       "length": 8,
-      "value": "\"3.18.0\""
+      "value": "\"3.18.1\""
     },
     {
       "filePath": "\/Users\/chayongbin\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
