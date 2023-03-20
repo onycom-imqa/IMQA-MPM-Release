@@ -46,6 +46,8 @@ public struct MemoryMonitor {
   @objc override dynamic public init()
   @objc deinit
   @objc public func run(config: IMQAMPMAgent.IMQAConfig)
+  @objc public func start()
+  @objc public func stop()
   @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
   @objc public func saveUserProfile(id: Swift.String?, name: Swift.String?, email: Swift.String?)
 }

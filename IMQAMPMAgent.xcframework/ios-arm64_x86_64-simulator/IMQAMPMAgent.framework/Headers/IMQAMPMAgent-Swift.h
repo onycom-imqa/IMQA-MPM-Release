@@ -295,6 +295,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 + (IMQAMpm * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
+- (void)start;
+- (void)stop;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
 - (void)saveUserProfileWithId:(NSString * _Nullable)id name:(NSString * _Nullable)name email:(NSString * _Nullable)email;
 @end
@@ -608,6 +610,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMQAMpm * _N
 + (IMQAMpm * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)runWithConfig:(IMQAConfig * _Nonnull)config;
+- (void)start;
+- (void)stop;
 - (void)saveWebviewPostMessage:(UIViewController * _Nonnull)vc :(NSString * _Nonnull)message;
 - (void)saveUserProfileWithId:(NSString * _Nullable)id name:(NSString * _Nullable)name email:(NSString * _Nullable)email;
 @end
