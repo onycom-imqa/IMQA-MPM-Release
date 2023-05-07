@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Onycom, Inc.' => 'support@imqa.io' }
   s.source           = { :http  => "https://github.com/onycom-imqa/IMQA-MPM-Release/releases/download/v#{s.version}/IMQAMPMAgent.zip" }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   
   s.ios.vendored_frameworks = 'IMQAMPMAgent.xcframework'
 
