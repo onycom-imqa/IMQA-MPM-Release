@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IMQAMPMAgent
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IMQAMPMAgent
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
 import CoreTelephony
@@ -16,7 +16,7 @@ import zlib
 @objc @_inheritsConvenienceInitializers public class FrameCounter : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
-  weak public var delegate: (any IMQAMPMAgent.FrameCounterDelegate)?
+  weak public var delegate: IMQAMPMAgent.FrameCounterDelegate?
   @objc public var notificationDelay: Swift.Double
   @objc public func startTracking(inRunLoop runloop: Foundation.RunLoop = .main, mode: Foundation.RunLoop.Mode = .common)
   @objc public func stopTracking()
@@ -50,6 +50,10 @@ public struct MemoryMonitor {
   @objc public func stop()
   @objc public func saveWebviewPostMessage(_ vc: UIKit.UIViewController, _ message: Swift.String)
   @objc public func saveUserProfile(id: Swift.String?, name: Swift.String?, email: Swift.String?)
+  @objc public func startScreen(_ screenName: Swift.String)
+  @objc public func endScreen(_ screenName: Swift.String)
+  @objc public func startComponent(_ component: Swift.String, _ parent: Swift.Bool)
+  @objc public func endComponent(_ component: Swift.String, _ parent: Swift.Bool)
 }
 public struct CPUMonitor {
   public init()
