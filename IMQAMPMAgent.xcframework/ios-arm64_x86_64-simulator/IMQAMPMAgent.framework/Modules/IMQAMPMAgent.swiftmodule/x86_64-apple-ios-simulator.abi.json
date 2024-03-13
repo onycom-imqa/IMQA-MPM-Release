@@ -2456,16 +2456,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "IMQAMPMAgent",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "IMQAConfig",
         "printedName": "IMQAConfig",
@@ -3123,8 +3113,8 @@
           },
           {
             "kind": "Var",
-            "name": "ignoreUrl",
-            "printedName": "ignoreUrl",
+            "name": "blacklistUrls",
+            "printedName": "blacklistUrls",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3142,8 +3132,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(py)ignoreUrl",
-            "mangledName": "$s12IMQAMPMAgent10IMQAConfigC9ignoreUrlSaySSGvp",
+            "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(py)blacklistUrls",
+            "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13blacklistUrlsSaySSGvp",
             "moduleName": "IMQAMPMAgent",
             "declAttributes": [
               "HasInitialValue",
@@ -3174,8 +3164,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)ignoreUrl",
-                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC9ignoreUrlSaySSGvg",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)blacklistUrls",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13blacklistUrlsSaySSGvg",
                 "moduleName": "IMQAMPMAgent",
                 "implicit": true,
                 "declAttributes": [
@@ -3209,8 +3199,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)setIgnoreUrl:",
-                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC9ignoreUrlSaySSGvs",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)setBlacklistUrls:",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13blacklistUrlsSaySSGvs",
                 "moduleName": "IMQAMPMAgent",
                 "implicit": true,
                 "declAttributes": [
@@ -3230,8 +3220,125 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12IMQAMPMAgent10IMQAConfigC9ignoreUrlSaySSGvM",
-                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC9ignoreUrlSaySSGvM",
+                "usr": "s:12IMQAMPMAgent10IMQAConfigC13blacklistUrlsSaySSGvM",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13blacklistUrlsSaySSGvM",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whitelistUrls",
+            "printedName": "whitelistUrls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(py)whitelistUrls",
+            "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13whitelistUrlsSaySSGvp",
+            "moduleName": "IMQAMPMAgent",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)whitelistUrls",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13whitelistUrlsSaySSGvg",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IMQAMPMAgent@objc(cs)IMQAConfig(im)setWhitelistUrls:",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13whitelistUrlsSaySSGvs",
+                "moduleName": "IMQAMPMAgent",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12IMQAMPMAgent10IMQAConfigC13whitelistUrlsSaySSGvM",
+                "mangledName": "$s12IMQAMPMAgent10IMQAConfigC13whitelistUrlsSaySSGvM",
                 "moduleName": "IMQAMPMAgent",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -4984,33 +5091,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5403,24 +5496,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -5446,6 +5540,27 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -5465,956 +5580,4589 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 357,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "Array",
+      "offset": 285,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 18,
+      "value": "\"io.imqa.mpm.flow\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 18,
+      "value": "\"io.imqa.mpm.flow\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 740,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 816,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 960,
+      "length": 18,
+      "value": "\"io.imqa.mpm.flow\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/FlowMonitor.swift",
+      "kind": "Array",
+      "offset": 1179,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
       "kind": "StringLiteral",
       "offset": 279,
       "length": 9,
       "value": "\"webview\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 514,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 651,
+      "length": 74,
+      "value": "\"{\"cpu\":\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 680,
+      "length": 1,
+      "value": "\"\",\"memory\":\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/WebviewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 1,
+      "value": "\"\"}\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
       "kind": "FloatLiteral",
       "offset": 1198,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
       "kind": "FloatLiteral",
       "offset": 1877,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
       "kind": "IntegerLiteral",
       "offset": 1914,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2032,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2174,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2461,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/FrameCounter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2499,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2782,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3529,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4096,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4122,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4151,
       "length": 7,
       "value": "1048576"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4183,
       "length": 10,
       "value": "1073741824"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4096,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4122,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4151,
       "length": 7,
       "value": "1048576"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4183,
       "length": 10,
       "value": "1073741824"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4096,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4122,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4151,
       "length": 7,
       "value": "1048576"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/MemoryMonitor.swift",
       "kind": "IntegerLiteral",
       "offset": 4183,
       "length": 10,
       "value": "1073741824"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/NetworkTracker.swift",
+      "kind": "Array",
+      "offset": 423,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/NetworkTracker.swift",
+      "kind": "Array",
+      "offset": 455,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/NetworkTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2092,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
       "offset": 554,
       "length": 66,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
       "offset": 616,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
       "kind": "StringLiteral",
       "offset": 619,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2018,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2084,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2141,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2240,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2302,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2358,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2376,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2386,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2426,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2432,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2435,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2498,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2587,
+      "length": 18,
+      "value": "\"io.imqa.mpm.flow\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2674,
+      "length": 22,
+      "value": "\"io.imqa.mpm.behavior\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 2953,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3019,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3076,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3143,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3222,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3262,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3268,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3279,
+      "length": 5,
+      "value": "\"end\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3327,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3416,
+      "length": 21,
+      "value": "\"io.imqa.mpm.current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/ViewControllerTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 3466,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "Array",
       "offset": 424,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "Array",
       "offset": 461,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
       "kind": "BooleanLiteral",
       "offset": 529,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 870,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 25,
+      "value": "\"[IMQA] Not support ipad\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 27,
+      "value": "\"[IMQA] Empty Project Key.\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
+      "length": 38,
+      "value": "\"[IMQA] Start tracking viewcontroller\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1543,
+      "length": 31,
+      "value": "\"[IMQA] Start tracking network\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1852,
+      "length": 32,
+      "value": "\"[IMQA] Start tracking resource\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1900,
+      "length": 33,
+      "value": "\"[IMQA] Start tracking backtrace\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1949,
+      "length": 34,
+      "value": "\"[IMQA] Complete setting IMQA MPM\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 1999,
+      "length": 45,
+      "value": "\"[IMQA] IMQA MPM Version : \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 2043,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2145,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2210,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 2395,
+      "length": 13,
+      "value": "\"io.imqa.mpm\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2613,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2718,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2780,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "Array",
+      "offset": 2955,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2985,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3071,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3282,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3333,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3352,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3400,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3418,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3480,
+      "length": 21,
+      "value": "\"io.imqa.mpm.webview\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3534,
+      "length": 49,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3576,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3717,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3762,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3809,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "Array",
+      "offset": 3930,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 3966,
+      "length": 20,
+      "value": "\"io.imqa.mpm.config\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4022,
+      "length": 14,
+      "value": "\"dev.langauge\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4070,
+      "length": 20,
+      "value": "\"io.imqa.mpm.config\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4120,
+      "length": 8,
+      "value": "\"prefix\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4162,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4215,
+      "length": 8,
+      "value": "\"render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4657,
+      "length": 21,
+      "value": "\"io.imqa.mpm.current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4696,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 4710,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5387,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5474,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "Array",
+      "offset": 5669,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6104,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 6130,
+      "length": 54,
+      "value": "\"============ [IMQA] BEHAVIOR DUMP START ============\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 6235,
+      "length": 52,
+      "value": "\"============ [IMQA] BEHAVIOR DUMP END ============\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7901,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 7927,
+      "length": 57,
+      "value": "\"============ [IMQA] PERFORMANCE DUMP START ============\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8035,
+      "length": 55,
+      "value": "\"============ [IMQA] PERFORMANCE DUMP END ============\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8418,
+      "length": 17,
+      "value": "\"Caught \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8434,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8540,
+      "length": 28,
+      "value": "\"startScreen: \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8656,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8718,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8775,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8796,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8806,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8846,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8852,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8855,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 8918,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9010,
+      "length": 18,
+      "value": "\"io.imqa.mpm.flow\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9100,
+      "length": 22,
+      "value": "\"io.imqa.mpm.behavior\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9240,
+      "length": 26,
+      "value": "\"endScreen: \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9265,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9314,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9396,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9436,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9442,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9453,
+      "length": 5,
+      "value": "\"end\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9492,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9584,
+      "length": 21,
+      "value": "\"io.imqa.mpm.current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9637,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9749,
+      "length": 36,
+      "value": "\"startComponentRender: \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9784,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9842,
+      "length": 21,
+      "value": "\"io.imqa.mpm.current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9881,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 9895,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10014,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10076,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10136,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10156,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10166,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10206,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10212,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10215,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10264,
+      "length": 8,
+      "value": "\"screen\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10319,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10460,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10511,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10530,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10577,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10597,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10607,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10647,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10653,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10656,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10713,
+      "length": 8,
+      "value": "\"screen\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10768,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10939,
+      "length": 34,
+      "value": "\"endComponentRender: \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 10972,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11029,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11113,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11153,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11159,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11170,
+      "length": 5,
+      "value": "\"end\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11209,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "Array",
+      "offset": 11336,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11461,
+      "length": 34,
+      "value": "\"[IMQA] IMQA Monitoring disabled.\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11549,
+      "length": 32,
+      "value": "\"[IMQA] Preparing to send data.\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11682,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 11719,
+      "length": 10,
+      "value": "\"IMQA MPM\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "FloatLiteral",
+      "offset": 11852,
+      "length": 4,
+      "value": "60.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "FloatLiteral",
+      "offset": 11908,
+      "length": 4,
+      "value": "60.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12102,
+      "length": 19,
+      "value": "\"\/cocoa\/api\/upload\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12154,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12186,
+      "length": 10,
+      "value": "\"no-cache\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12218,
+      "length": 15,
+      "value": "\"Cache-Control\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12260,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12300,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12341,
+      "length": 6,
+      "value": "\"gzip\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12369,
+      "length": 18,
+      "value": "\"Content-Encoding\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12414,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12454,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12529,
+      "length": 13,
+      "value": "\"project_key\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12848,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/IMQAMpm.swift",
+      "kind": "StringLiteral",
+      "offset": 12880,
+      "length": 32,
+      "value": "\"[IMQA] Data sent successfully.\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "Array",
+      "offset": 288,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 346,
+      "length": 21,
+      "value": "\"io.imqa.mpm.request\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 575,
+      "length": 21,
+      "value": "\"io.imqa.mpm.request\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 14,
+      "value": "\"request_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 788,
+      "length": 15,
+      "value": "\"response_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 863,
+      "length": 6,
+      "value": "\"host\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 874,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 943,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1002,
+      "length": 11,
+      "value": "\"path_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1074,
+      "length": 8,
+      "value": "\"method\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 10,
+      "value": "\"protocol\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1161,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1215,
+      "length": 6,
+      "value": "\"port\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1226,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1288,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1307,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1375,
+      "length": 21,
+      "value": "\"io.imqa.mpm.request\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RequestMonitor.swift",
+      "kind": "Array",
+      "offset": 1609,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "Array",
+      "offset": 725,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "Array",
+      "offset": 950,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 989,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1224,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1275,
+      "length": 11,
+      "value": "\"Thread 0:\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1592,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1971,
+      "length": 21,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1991,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Trace\/ThreadTraceMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2112,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 6,
       "value": "\"flow\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 321,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "kind": "StringLiteral",
+      "offset": 420,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/FlowModel.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1243,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1296,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1349,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1402,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1706,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 2319,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2418,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2574,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2776,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3074,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3502,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 3625,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4162,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4435,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4614,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4959,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5006,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 5109,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5139,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5370,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5578,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Performace\/CPUMonitor.swift",
+      "kind": "FloatLiteral",
+      "offset": 5854,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "Array",
       "offset": 364,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "FloatLiteral",
       "offset": 423,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "FloatLiteral",
       "offset": 486,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "Array",
       "offset": 595,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 787,
+      "length": 13,
+      "value": "\"thread_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 11,
+      "value": "\"backtrace\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1126,
+      "length": 13,
+      "value": "\"method_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1144,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1194,
+      "length": 8,
+      "value": "\"offset\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1259,
+      "length": 11,
+      "value": "\"file_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1275,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1329,
+      "length": 5,
+      "value": "\"idx\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 4,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 4,
+      "value": "\") \""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1478,
+      "length": 13,
+      "value": "\"symbol_addr\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1496,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1551,
+      "length": 11,
+      "value": "\"load_addr\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1621,
+      "length": 18,
+      "value": "\"instruction_addr\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 1929,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 1964,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 2049,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 2098,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 2144,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/AppModel.swift",
       "kind": "StringLiteral",
       "offset": 2195,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 9,
       "value": "\"request\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 448,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 502,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 533,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 561,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 592,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 618,
       "length": 4,
       "value": "\"80\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 646,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
       "kind": "StringLiteral",
       "offset": 680,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "kind": "StringLiteral",
+      "offset": 746,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "kind": "StringLiteral",
+      "offset": 782,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RequestModel.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 820,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1663,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1705,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2167,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2458,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Sysctl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3478,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
       "kind": "StringLiteral",
       "offset": 97,
       "length": 28,
       "value": "\"IMQAProtocolRequestHandled\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 845,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 6,
+      "value": "\"http\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1084,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1722,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3673,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4042,
+      "length": 49,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4084,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4090,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "Dictionary",
+      "offset": 4202,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4285,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4298,
+      "length": 14,
+      "value": "\"request_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4394,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4407,
+      "length": 15,
+      "value": "\"response_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4520,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4532,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4615,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4630,
+      "length": 8,
+      "value": "\"method\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4708,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4759,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4778,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4871,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 4997,
+      "length": 4,
+      "value": "\"\/\/\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5050,
+      "length": 6,
+      "value": "\"kr:\/\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5124,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5207,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5213,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5281,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5298,
+      "length": 10,
+      "value": "\"protocol\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5368,
+      "length": 5,
+      "value": "\"443\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5383,
+      "length": 6,
+      "value": "\"port\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5482,
+      "length": 6,
+      "value": "\"http\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5498,
+      "length": 10,
+      "value": "\"protocol\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5568,
+      "length": 4,
+      "value": "\"80\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5582,
+      "length": 6,
+      "value": "\"port\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5698,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5782,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5795,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5864,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5881,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5962,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5977,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5980,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 5991,
+      "length": 6,
+      "value": "\"host\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6057,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6072,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6075,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6086,
+      "length": 6,
+      "value": "\"port\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6185,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6197,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6200,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6211,
+      "length": 6,
+      "value": "\"host\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6314,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6395,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6452,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6472,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6483,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6736,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6749,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6760,
+      "length": 11,
+      "value": "\"path_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6872,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 6885,
+      "length": 11,
+      "value": "\"path_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7037,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7054,
+      "length": 10,
+      "value": "\"protocol\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7120,
+      "length": 5,
+      "value": "\"443\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7135,
+      "length": 6,
+      "value": "\"port\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7197,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7216,
+      "length": 6,
+      "value": "\"host\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7278,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7297,
+      "length": 11,
+      "value": "\"path_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7413,
+      "length": 21,
+      "value": "\"io.imqa.mpm.request\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7490,
+      "length": 48,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7530,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 7537,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10642,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10652,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10657,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10664,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10724,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10827,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10923,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11369,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11395,
+      "length": 49,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11437,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11443,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11469,
+      "length": 49,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11511,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11517,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 11558,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/Network\/HTTPProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11582,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "Array",
+      "offset": 297,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 21,
+      "value": "\"io.imqa.mpm.webview\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 584,
+      "length": 21,
+      "value": "\"io.imqa.mpm.webview\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 706,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 717,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 779,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 798,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 866,
+      "length": 21,
+      "value": "\"io.imqa.mpm.webview\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/WebviewMonitor.swift",
+      "kind": "Array",
+      "offset": 1109,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 303,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
       "offset": 428,
       "length": 7,
       "value": "\"swift\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
       "offset": 561,
       "length": 27,
       "value": "\"https:\/\/collector.imqa.io\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "Array",
-      "offset": 632,
+      "offset": 636,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "kind": "Array",
+      "offset": 686,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 682,
+      "offset": 736,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 741,
+      "offset": 795,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 792,
+      "offset": 846,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 840,
+      "offset": 894,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 883,
+      "offset": 937,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
-      "offset": 927,
+      "offset": 981,
       "length": 8,
       "value": "\"3.21.0\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/IMQAConfig.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 10,
       "value": "\"IMQAMPMAgent.IMQAConfig\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 407,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
       "kind": "StringLiteral",
       "offset": 441,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1348,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1453,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DeviceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1535,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
       "kind": "StringLiteral",
       "offset": 228,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 476,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 585,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 841,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1002,
+      "length": 20,
+      "value": "\"io.imqa.mpm.custom\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/UserProfileModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1044,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 8,
       "value": "\"render\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 15,
       "value": "\"viewDidAppear\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 376,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 436,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 9,
+      "value": "\"vc_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 776,
+      "length": 16,
+      "value": "\"lifecycle_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
+      "length": 12,
+      "value": "\"start_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 10,
+      "value": "\"end_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1070,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 10,
       "value": "\"behavior\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1268,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1295,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1321,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 1355,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1551,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 13,
+      "value": "\"screen_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1699,
+      "length": 12,
+      "value": "\"start_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1770,
+      "length": 7,
+      "value": "\"depth\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1835,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1907,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2033,
       "length": 18,
       "value": "\"component_render\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2082,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2118,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2150,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2180,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2206,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2240,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
       "kind": "StringLiteral",
       "offset": 2272,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2482,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2556,
+      "length": 13,
+      "value": "\"screen_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2640,
+      "length": 16,
+      "value": "\"component_name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2723,
+      "length": 12,
+      "value": "\"start_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2800,
+      "length": 10,
+      "value": "\"end_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2871,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2946,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/RenderModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3027,
+      "length": 12,
+      "value": "\"is_parents\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 262,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "IntegerLiteral",
       "offset": 294,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 325,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
       "kind": "Array",
       "offset": 591,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 896,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1045,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/ResultModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1142,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "FloatLiteral",
       "offset": 461,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "FloatLiteral",
       "offset": 523,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "FloatLiteral",
       "offset": 551,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "IntegerLiteral",
       "offset": 610,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "IntegerLiteral",
       "offset": 636,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/OSModel.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 256,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 293,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 703,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 743,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 823,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 862,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 942,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 981,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1027,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1067,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1205,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/SystemServiceModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1250,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 7,
       "value": "\"start\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/StartModel.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 12,
+      "value": "\"start_time\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 284,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 756,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 837,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 894,
+      "length": 5,
+      "value": "\"end\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 972,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1019,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1079,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1098,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 20,
+      "value": "\"io.imqa.mpm.render\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1265,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 1509,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 1614,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1739,
+      "length": 22,
+      "value": "\"io.imqa.mpm.behavior\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1822,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1981,
+      "length": 22,
+      "value": "\"io.imqa.mpm.behavior\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2109,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2120,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2178,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2258,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2294,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2305,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2365,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2384,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2427,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2467,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2513,
+      "length": 22,
+      "value": "\"io.imqa.mpm.behavior\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 2750,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 2857,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2915,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3152,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3287,
+      "length": 8,
+      "value": "\"screen\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3300,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3368,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3379,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3443,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3455,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3518,
+      "length": 5,
+      "value": "\"end\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3528,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3593,
+      "length": 8,
+      "value": "\"parent\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3606,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3676,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3712,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3723,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3789,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3808,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 3897,
+      "length": 23,
+      "value": "\"io.imqa.mpm.component\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 4002,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 4036,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Features\/RenderMonitor.swift",
+      "kind": "Array",
+      "offset": 4291,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 5,
       "value": "\"res\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 18,
+      "value": "\"io.imqa.mpm.txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 6,
+      "value": "\"txId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 558,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 33,
+      "value": "\"io.imqa.mpm.currentBehaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 664,
+      "length": 14,
+      "value": "\"behaviorTxId\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 749,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/res\/ResourceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 772,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 262,
       "length": 8,
       "value": "\"2.17.2\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "IntegerLiteral",
       "offset": 300,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 561,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 807,
+      "length": 20,
+      "value": "\"CFBundleIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 992,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Models\/DumpKeyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1071,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "StringLiteral",
+      "offset": 3519,
+      "length": 20,
+      "value": "\"Unknown gzip error\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "Array",
+      "offset": 4328,
+      "length": 12,
+      "value": "[0x1f, 0x8b]"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4961,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6637,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7356,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7853,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7969,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 9782,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/drcoton\/Workspace\/imqa\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/Data+Gzip.swift",
       "kind": "IntegerLiteral",
       "offset": 9786,
       "length": 2,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 509,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 865,
+      "length": 3,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 3,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 937,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1354,
+      "length": 4,
+      "value": "\"\\\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1366,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/coton\/Workspace\/IMQA-MPM-iOS\/Sources\/Utils\/IMUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1418,
+      "length": 2,
+      "value": "\"\""
     }
   ]
 }

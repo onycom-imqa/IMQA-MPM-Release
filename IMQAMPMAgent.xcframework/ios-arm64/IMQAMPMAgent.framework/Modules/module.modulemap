@@ -1,7 +1,7 @@
 framework module IMQAMPMAgent {
   umbrella header "IMQAMPMAgent.h"
-
   export *
+
   module * { export * }
 }
 
